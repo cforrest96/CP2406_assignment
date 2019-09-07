@@ -28,7 +28,6 @@ public class Car {
         this.car_road = car_road;
     }
 
-
     static int car_move(int value) {
         return value + 1;
     }
