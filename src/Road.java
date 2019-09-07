@@ -12,15 +12,15 @@ public class Road {
 
     public Road(int road_length, int road_num, Boolean road_light){
         set_road_num(road_num);
-        setRoad_length(road_length);
-        setRoad_light(false);
+        set_road_length(road_length);
+        set_road_light(false);
     }
 
-    public int getRoad_length() {
+    public int get_road_length() {
         return road_length;
     }
 
-    public void setRoad_length(int road_length) {
+    public void set_road_length(int road_length) {
         this.road_length = road_length;
     }
 
@@ -40,11 +40,11 @@ public class Road {
         this.road_shape = road_shape;
     }
 
-    public Boolean getRoad_light() {
+    public Boolean get_road_light() {
         return road_light;
     }
 
-    public void setRoad_light(Boolean road_light) {
+    public void set_road_light(Boolean road_light) {
         this.road_light = road_light;
     }
 }
