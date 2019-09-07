@@ -18,6 +18,8 @@ public class TrafficLightTest {
                 light.traffic_light_operate(light.get_traffic_light_number()));
         assertNotEquals(0, light.traffic_light_operate
                 (light.get_traffic_light_number()));
+        assertEquals(0, light.traffic_light_operate(1));
+
     }
 
     @Test void check_get_light_colour() {

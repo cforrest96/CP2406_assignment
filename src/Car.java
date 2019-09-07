@@ -44,14 +44,13 @@ public class Car {
         return value + 1;
     }
     static String car_type(double value){
-        String vehicle_type;
         final double CAR_LENGTH = 0.5;
         if (value == CAR_LENGTH)
-            return vehicle_type = "car";
+            return "car";
         else if (value == CAR_LENGTH * 3)
-            return vehicle_type = "bus";
+            return "bus";
         else if (value == CAR_LENGTH * 0.5)
-            return vehicle_type = "motorbike";
+            return "motorbike";
         else
             return "error";
 
