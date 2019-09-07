@@ -1,3 +1,4 @@
+
 public class Car {
 
     private double vehicle_length;
@@ -29,6 +30,17 @@ public class Car {
     }
 
     static int car_move(int value) {
+        Road road = new Road();
+        if (road.road_num == road.road_length) {
+            if (road.road_light) {
+                TrafficLight light = new TrafficLight();
+                    if (light.traffic_light_number == 0)
+                        return value;
+                    else
+                        return value + 1;
+
+            }
+        }
         return value + 1;
     }
     static String car_type(double value){

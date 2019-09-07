@@ -1,8 +1,17 @@
 public class Road {
+    int road_length;
     int road_num;
     int road_seg;
     String road_shape;
     Boolean road_light;
+
+    public int getRoad_length() {
+        return road_length;
+    }
+
+    public void setRoad_length(int road_length) {
+        this.road_length = road_length;
+    }
 
     public int get_road_num() {
         return road_num;
