@@ -5,6 +5,17 @@ public class Car {
     private int car_position;
     public int car_road;
 
+    public Car() {
+        vehicle_length = 0.5;
+        car_position = 1;
+        car_road = 1;
+    }
+    public Car(double vehicle_length, int car_position, int car_road) {
+        set_vehicle_length(vehicle_length);
+        set_car_position(car_position);
+        set_car_road(car_road);
+    }
+
     public double get_vehicle_length() {
         return vehicle_length;
     }
