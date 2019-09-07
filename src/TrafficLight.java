@@ -43,7 +43,7 @@ public class TrafficLight {
         this.traffic_light_road = traffic_light_road;
     }
 
-    int get_change_num() {
+    static int get_change_num() {
         Random r = new Random();
         int n = r.nextInt(99);
         return n += 1;
