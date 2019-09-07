@@ -4,6 +4,7 @@ public class TrafficLight {
     // 0 is green, 1 is red
     int traffic_light_number;
     int traffic_light_change_rate;
+    int traffic_light_road;
 
     public int get_traffic_light_number() {
         return traffic_light_number;
@@ -19,6 +20,14 @@ public class TrafficLight {
 
     public void set_traffic_light_change_rate(int traffic_light_change_rate) {
         this.traffic_light_change_rate = traffic_light_change_rate;
+    }
+
+    public int getTraffic_light_road() {
+        return traffic_light_road;
+    }
+
+    public void setTraffic_light_road(int traffic_light_road) {
+        this.traffic_light_road = traffic_light_road;
     }
 
     public int get_change_num() {
