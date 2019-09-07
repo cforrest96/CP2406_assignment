@@ -6,6 +6,19 @@ public class TrafficLight {
     int traffic_light_change_rate;
     int traffic_light_road;
 
+    public TrafficLight() {
+        traffic_light_number = 1;
+        traffic_light_change_rate = 30;
+        traffic_light_road = 1;
+    }
+
+    public TrafficLight(int traffic_light_number, int traffic_light_change_rate,
+                            int traffic_light_road) {
+        set_traffic_light_number(traffic_light_number);
+        set_traffic_light_change_rate(traffic_light_change_rate);
+        setTraffic_light_road(traffic_light_road);
+    }
+
     public int get_traffic_light_number() {
         return traffic_light_number;
     }

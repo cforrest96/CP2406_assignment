@@ -16,7 +16,6 @@ public class Road {
         setRoad_light(false);
     }
 
-
     public int getRoad_length() {
         return road_length;
     }
