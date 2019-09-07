@@ -1,8 +1,8 @@
 public class Road {
-    int road_length;
-    int road_num;
-    String road_shape;
-    Boolean road_light;
+    private int road_length;
+    private int road_num;
+    private String road_shape;
+    private Boolean road_light;
 
     public Road(){
         road_length = 4;
