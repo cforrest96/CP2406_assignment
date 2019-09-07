@@ -2,15 +2,15 @@ import java.util.Random;
 
 public class TrafficLight {
     // 0 is green, 1 is red
-    int traffic_light_colour;
+    int traffic_light_number;
     int traffic_light_change_rate;
 
-    public int get_traffic_light_colour() {
-        return traffic_light_colour;
+    public int get_traffic_light_number() {
+        return traffic_light_number;
     }
 
-    public void set_traffic_light_colour(int traffic_light_colour) {
-        this.traffic_light_colour = traffic_light_colour;
+    public void set_traffic_light_number(int traffic_light_colour) {
+        this.traffic_light_number = traffic_light_colour;
     }
 
     public int get_traffic_light_change_rate() {
