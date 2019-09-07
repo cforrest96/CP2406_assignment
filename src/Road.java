@@ -1,9 +1,21 @@
 public class Road {
     int road_length;
     int road_num;
-    int road_seg;
     String road_shape;
     Boolean road_light;
+
+    public Road(){
+        road_length = 4;
+        road_num = 1;
+        road_light = true;
+    }
+
+    public Road(int road_length, int road_num, Boolean road_light){
+        set_road_num(road_num);
+        setRoad_length(road_length);
+        setRoad_light(false);
+    }
+
 
     public int getRoad_length() {
         return road_length;
@@ -19,14 +31,6 @@ public class Road {
 
     public void set_road_num(int road_num) {
         this.road_num = road_num;
-    }
-
-    public int get_road_seg() {
-        return road_seg;
-    }
-
-    public void set_road_seg(int road_seg) {
-        this.road_seg = road_seg;
     }
 
     public String get_road_shape() {
