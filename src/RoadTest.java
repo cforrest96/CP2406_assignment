@@ -17,42 +17,10 @@ public class RoadTest {
     }
 
     @org.junit.Test
-    public void getRoad_length() {
-    }
-
-    @org.junit.Test
-    public void setRoad_length() {
-    }
-
-    @org.junit.Test
-    public void get_road_num() {
-    }
-
-    @org.junit.Test
-    public void set_road_num() {
-    }
-
-    @org.junit.Test
-    public void get_road_seg() {
-    }
-
-    @org.junit.Test
-    public void set_road_seg() {
-    }
-
-    @org.junit.Test
-    public void get_road_shape() {
-    }
-
-    @org.junit.Test
-    public void set_road_shape() {
-    }
-
-    @org.junit.Test
-    public void getRoad_light() {
-    }
-
-    @org.junit.Test
-    public void setRoad_light() {
+    public void test_road() {
+        Road road = new Road();
+        assertEquals(4, road.get_road_length());
+        assertEquals(1, road.get_road_num());
+        assertTrue(road.get_road_light());
     }
 }
