@@ -11,10 +11,10 @@ public class main {
                 if (i <= light1.get_traffic_light_change_rate())
                     light1.traffic_light_operate(light1.get_traffic_light_number());
             }
-            if (road1.get_road_light() && light1.get_traffic_light_number() != 0) {
-                System.out.println(car1.car_type(car1.get_vehicle_length()) + " stops at traffic light");
+            System.out.println(car1.car_type(car1.get_vehicle_length()) + " stops at traffic light");
+            while (road1.get_road_light() && light1.get_traffic_light_number() != 0)
                 while (light1.get_traffic_light_number() != 0) {
-                    int i = TrafficLight.get_change_num() + 1;
+                    int i = TrafficLight.get_change_num();
 
                     while (i >= light1.get_traffic_light_change_rate()) {
                         i = TrafficLight.get_change_num();
@@ -22,28 +22,16 @@ public class main {
                     }
                     light1.traffic_light_operate(light1.get_traffic_light_number());
                 }
-
-            }
-            else {
-
-                System.out.println("Light is " + light1.get_light_colour(light1.get_traffic_light_number()));
-                car1.set_car_road(2);
-                car1.set_car_position(1);
-                System.out.println(car1.car_type(car1.get_vehicle_length()) + " is on road " + car1.get_car_road());
-            }
+            System.out.println("Light is " + light1.get_light_colour(light1.get_traffic_light_number()));
+            car1.set_car_road(2);
+            car1.set_car_position(1);
+            System.out.println(car1.car_type(car1.get_vehicle_length()) + " is on road " + car1.get_car_road());
             while (car1.get_car_position() <= road2.get_road_length()) {
                 car1.set_car_position(car1.car_move(car1.get_car_position()));
             }
         }
-
         System.out.println(car1.car_type(car1.get_vehicle_length()) + " is gone");
 
-
-
-
-
-
     }
-
 }
 

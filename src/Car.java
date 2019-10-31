@@ -43,6 +43,7 @@ public class Car {
     static int car_move(int value) {
         return value + 1;
     }
+
     static String car_type(double value){
         final double CAR_LENGTH = 0.5;
         if (value == CAR_LENGTH)
